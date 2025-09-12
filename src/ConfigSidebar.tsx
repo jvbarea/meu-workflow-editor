@@ -29,7 +29,6 @@ export const ConfigSidebar = ({ selectedNode, heritableFields, onUpdateNode, onC
 
   useEffect(() => { setNodeData(selectedNode.data); }, [selectedNode]);
 
-  // Lógica de atualização refatorada e corrigida
   const updateField = (path: (string | number)[], name: string, value: any) => {
     setNodeData(currentData => {
       const newData = structuredClone(currentData);
@@ -47,7 +46,6 @@ export const ConfigSidebar = ({ selectedNode, heritableFields, onUpdateNode, onC
     const newField: ProcessField = { id: crypto.randomUUID(), name: 'Novo Campo', type: 'string', required: listType === 'outputs' };
     const newData = structuredClone(nodeData);
     if (listType === 'inputs' && path.length > 0) {
-      // CORREÇÃO: O índice do campo pai está em path[1], não path[0].
       let parentField = newData.inputs[path[1] as number];
       if (!parentField.alternatives) parentField.alternatives = [];
       parentField.alternatives.push(newField);

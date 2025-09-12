@@ -3,7 +3,7 @@ import ReactFlow, { ReactFlowProvider, useNodesState, useEdgesState, addEdge, Mi
 import { ProcessNodeData } from './types';
 import { ConfigSidebar, HeritableField } from './ConfigSidebar';
 import ProcessNode from './ProcessNode';
-import { Box, Button } from '@mui/material'; // Importações do MUI
+import { Box, Button } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import SchemaIcon from '@mui/icons-material/Schema';
 import './styles.css';
