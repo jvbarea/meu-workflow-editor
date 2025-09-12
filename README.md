@@ -40,17 +40,13 @@ Siga os passos abaixo para rodar o projeto em sua máquina local.
     git clone https://github.com/jvbarea/meu-workflow-editor.git
     ```
 
-2.  **Navegue até a pasta do projeto:**
-    ```bash
-    cd nome-do-repositorio
-    ```
 
-3.  **Instale todas as dependências:**
+2.  **Instale todas as dependências:**
     ```bash
     npm install
     ```
 
-4.  **Inicie o servidor de desenvolvimento:**
+3.  **Inicie o servidor de desenvolvimento:**
     ```bash
     npm start
     ```
