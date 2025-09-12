@@ -1,10 +1,9 @@
-# Editor Visual de Fluxo de Processos (Workflow)
+# Editor Visual de Fluxo de Blocos
 
 Este é um editor de fluxo de trabalho construído com React, TypeScript e React Flow. A ferramenta permite a criação visual de diagramas de processos complexos, onde cada etapa (nó) pode ser configurada com regras de negócio específicas, como campos de entrada, saída e lógicas condicionais.
 
 O objetivo principal é permitir que um usuário modele um processo de forma intuitiva e gere uma estrutura de dados JSON limpa e semântica, pronta para ser interpretada por um sistema de backend.
 
-![image_0eeebf.png](https://gist.github.com/assets/13340381/a4347101-7001-4439-93e1-38e53097d740)
 
 ## ✨ Funcionalidades
 
