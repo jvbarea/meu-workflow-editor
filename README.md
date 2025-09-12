@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# Editor Visual de Fluxo de Processos (Workflow)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um editor de fluxo de trabalho construído com React, TypeScript e React Flow. A ferramenta permite a criação visual de diagramas de processos complexos, onde cada etapa (nó) pode ser configurada com regras de negócio específicas, como campos de entrada, saída e lógicas condicionais.
 
-## Available Scripts
+O objetivo principal é permitir que um usuário modele um processo de forma intuitiva e gere uma estrutura de dados JSON limpa e semântica, pronta para ser interpretada por um sistema de backend.
 
-In the project directory, you can run:
+![image_0eeebf.png](https://gist.github.com/assets/13340381/a4347101-7001-4439-93e1-38e53097d740)
 
-### `npm start`
+## ✨ Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Criação Visual de Fluxos:** Adicione, remova, arraste e conecte etapas (nós) em uma interface de canvas intuitiva.
+- **Configuração de Etapas:** Cada etapa possui um painel de configuração detalhado para definir:
+  - **Campos de Entrada:** Defina os dados que a etapa precisa para ser executada.
+  - **Campos de Saída:** Defina os dados que a etapa irá produzir.
+- **Herança Inteligente de Campos:** Uma etapa pode "puxar" e reutilizar campos de entrada ou saída de qualquer etapa anterior no fluxo através de um seletor com autocomplete.
+- **Lógica "OU" por Campo:** Configure campos de entrada que podem ser substituídos por outros campos alternativos, permitindo flexibilidade na execução do processo.
+- **Geração de JSON Semântico:** Exporte a lógica do fluxo para um formato JSON limpo, focado nas regras de negócio e não nos dados visuais, pronto para ser consumido pelo backend.
+- **Interface com Material-UI (MUI):** Componentes modernos e uma experiência de usuário aprimorada.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠️ Tecnologias Utilizadas
 
-### `npm test`
+- **[React](https://reactjs.org/)**: Biblioteca para a construção da interface de usuário.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática.
+- **[React Flow](https://reactflow.dev/)**: Biblioteca para a criação de editores baseados em nós.
+- **[Material-UI (MUI)](https://mui.com/)**: Biblioteca de componentes React para um design mais rápido e fácil.
+- **[Create React App](https://create-react-app.dev/)**: Template para inicialização do projeto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Instalação e Execução
 
-### `npm run build`
+Siga os passos abaixo para rodar o projeto em sua máquina local.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré-requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Node.js](https://nodejs.org/en/) (versão 16 ou superior)
+- [npm](https://www.npmjs.com/) (geralmente instalado junto com o Node.js)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Passos
 
-### `npm run eject`
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2.  **Navegue até a pasta do projeto:**
+    ```bash
+    cd nome-do-repositorio
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3.  **Instale todas as dependências:**
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm start
+    ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Após executar o último comando, o projeto será aberto automaticamente em seu navegador no endereço `http://localhost:3000`.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
