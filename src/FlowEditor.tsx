@@ -17,11 +17,11 @@ const initialNodes: Node<ProcessNodeData>[] = [
     type: 'processNode',
     position: { x: 50, y: 150 },
     data: {
-      label: 'Início do Processo',
+      label: 'Tarefa 1',
       inputs: [],
       outputs: [
-        { id: 'out1', name: 'CPF do Cliente', type: 'string', required: true },
-        { id: 'out2', name: 'Nome do Cliente', type: 'string', required: true },
+        { id: 'out1', name: 'id', type: 'string', required: true },
+        { id: 'out2', name: 'Nome da Tarefa', type: 'string', required: true },
       ],
     },
   },
@@ -42,7 +42,7 @@ const FlowEditorContent = () => {
     const newNode: Node<ProcessNodeData> = {
       id: newNodeId, type: 'processNode',
       position: { x: Math.random() * 500, y: Math.random() * 500 },
-      data: { label: `Nova Etapa`, inputs: [], outputs: [] },
+      data: { label: `Nova Tarefa`, inputs: [], outputs: [] },
     };
     setNodes((nds) => nds.concat(newNode));
   }, [setNodes]);
