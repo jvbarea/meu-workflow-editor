@@ -11,8 +11,10 @@ const FieldItem = ({ name, type }: { name: string, type: 'input' | 'output' }) =
 );
 
 const ProcessNode = ({ data }: NodeProps<ProcessNodeData>) => {
+  const nodeClassName = `process-node status-${data.status || 'default'}`;
+
   return (
-    <div className="process-node">
+    <div className={nodeClassName}>
       <Handle type="target" position={Position.Left} />
 
       <div className="label">{data.label}</div>
